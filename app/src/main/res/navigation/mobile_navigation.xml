@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/movieFragment3">
+    <fragment
+        android:id="@+id/movieFragment3"
+        android:name="com.bimabagaskhoro.testberkatsoft.ui.movie.MovieFragment"
+        android:label="fragment_movie"
+        tools:layout="@layout/fragment_movie" >
+        <action
+            android:id="@+id/action_movieFragment3_to_detailFragment"
+            app:destination="@id/detailFragment" />
+        <action
+            android:id="@+id/action_movieFragment3_to_movieNowPlayingFragment"
+            app:destination="@id/movieNowPlayingFragment" />
+        <action
+            android:id="@+id/action_movieFragment3_to_moviePopularFragment"
+            app:destination="@id/moviePopularFragment" />
+        <action
+            android:id="@+id/action_movieFragment3_to_movieTopRatedFragment"
+            app:destination="@id/movieTopRatedFragment" />
+        <action
+            android:id="@+id/action_movieFragment3_to_movieUpcomingFragment"
+            app:destination="@id/movieUpcomingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.bimabagaskhoro.testberkatsoft.ui.detail.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" />
+    <fragment
+        android:id="@+id/movieNowPlayingFragment"
+        android:name="com.bimabagaskhoro.testberkatsoft.ui.movie.MovieNowPlayingFragment"
+        android:label="fragment_movie_now_playing"
+        tools:layout="@layout/fragment_movie_now_playing" >
+        <action
+            android:id="@+id/action_movieNowPlayingFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/moviePopularFragment"
+        android:name="com.bimabagaskhoro.testberkatsoft.ui.movie.MoviePopularFragment"
+        android:label="fragment_movie_popular"
+        tools:layout="@layout/fragment_movie_popular" >
+        <action
+            android:id="@+id/action_moviePopularFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/movieTopRatedFragment"
+        android:name="com.bimabagaskhoro.testberkatsoft.ui.movie.MovieTopRatedFragment"
+        android:label="fragment_movie_top_rated"
+        tools:layout="@layout/fragment_movie_top_rated" >
+        <action
+            android:id="@+id/action_movieTopRatedFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/movieUpcomingFragment"
+        android:name="com.bimabagaskhoro.testberkatsoft.ui.movie.MovieUpcomingFragment"
+        android:label="fragment_movie_upcoming"
+        tools:layout="@layout/fragment_movie_upcoming" >
+        <action
+            android:id="@+id/action_movieUpcomingFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+</navigation>
